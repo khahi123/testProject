@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="login-page">
+    <div class="form">
+        <form class="login-form">
+            <input type="text" placeholder="Tài khoản"/>
+            <input type="password" placeholder="Mật khẩu"/>
+            <button type="submit">Đăng nhập</button>
+            <p class="message">Chưa có tài khoản? <a href="#">Tạo tài khoản</a></p>
+        </form>
+    </div>
+</div>
+<script>
+    const userInput = document.querySelector("input[type='text']");
+    const passInput = document.querySelector('input[type="password"]');
+    const btnSubmit = document.querySelector("button[type='submit']");
+
+    btnSubmit.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        if(userInput.value.trim() === "") {
+            alert("Không được bỏ trống !");
+            return;
+        }
+
+        if(passInput.value.trim() === "") {
+            alert("không được bỏ trống !");
+            return;
+        }
+
+        alert("Đăng nhập thành công !");
+
+    });
+
+
+</script>
+</body>
+</html>

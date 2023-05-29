@@ -1,0 +1,11 @@
+.header{
+    height: 80px;
+    background: aliceblue;
+}
+
+.footer1{
+    display: flex;
+    background: aliceblue;
+    justify-content: center;
+}
+
